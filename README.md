@@ -81,4 +81,4 @@ This project is intended for educational purposes only.
 
 ## 👤 Author
 
-- GitHub: [@adil-r120](https://github.com/adil-r120)
+- GitHub:Md Adil Raza [@adil-r120](https://github.com/adil-r120)
