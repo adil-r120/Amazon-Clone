@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Static HTML/CSS Amazon-style landing demo">
+    <title>Amazon demo</title>
+    <!-- Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amazon_p1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-left">
+                <a class="nav_logo border" href="#">
+                    <img src="images/amazon_logo.png.jpg" alt="Amazon" class="logo">
+                </a>
+
+                <div class="nav-address border" aria-hidden="false">
+                    <p class="add-first">Deliver to</p>
+                    <div class="add-icon" aria-hidden="true">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <p class="add-second">India</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accessible search form -->
+            <form class="nav-search" role="search" action="#" method="get" aria-label="Search site">
+                <select class="Search-Select" name="category" aria-label="Search category">
+                    <option value="all">All</option>
+                    <option value="books">Books</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home & Kitchen</option>
+                </select>
+                <input id="search-input" name="q" placeholder="Search Amazon" class="search-input" type="search" autocomplete="off">
+                <button type="submit" class="Search-icon" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+            </form>
+
+            <div class="nav-actions">
+                <a class="nav-signin border" href="#">
+                    <span class="sr">Hello, Sign in</span>
+                    <div class="nav-text">
+                        <p class="nav-line">Hello, Sign in</p>
+                        <p class="nav-second">Account & Lists</p>
+                    </div>
+                </a>
+
+                <a class="nav-return border" href="#">
+                    <div class="nav-text">
+                        <p class="nav-line">Returns</p>
+                        <p class="nav-second">Orders</p>
+                    </div>
+                </a>
+
+                <a class="nav-cart border" href="#" aria-label="Cart">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    <span class="cart-text">Cart</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="panel" role="navigation" aria-label="Secondary navigation">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                <a href="#">All</a>
+            </div>
+            <div class="panel-ops">
+                <a class="border" href="#">Today's Deals</a>
+                <a class="border" href="#">Customer Service</a>
+                <a class="border" href="#">Registry</a>
+                <a class="border" href="#">Gift Cards</a>
+                <a class="border" href="#">Sell</a>
+            </div>
+            <div class="panel-deals border">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section with Promotional Content -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Great Deals on Electronics</h1>
+                <p>Discover amazing offers on the latest gadgets and devices</p>
+                <a href="#" class="hero-button">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/back3.png.jpg" alt="Featured Electronics Deal">
+            </div>
+        </div>
+        
+        <!-- Additional Promotional Banners -->
+        <div class="promo-banners">
+            <div class="promo-banner">
+                <img src="images/back1.png.jpg" alt="Health & Personal Care Deals">
+                <div class="promo-text">
+                    <h3>Health & Wellness</h3>
+                    <p>Up to 50% off</p>
+                </div>
+            </div>
+            
+            <div class="promo-banner">
+                <img src="images/back7.png.jpg" alt="Electronics Deals">
+                <div class="promo-text">
+                    <h3>Electronics</h3>
+                    <p>Starting at ₹999</p>
+                </div>
+            </div>
+            
+            <div class="promo-banner">
+                <img src="images/back4.png.jpg" alt="Sports Equipment Deals">
+                <div class="promo-text">
+                    <h3>Sports Gear</h3>
+                    <p>From ₹199</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <section class="shop-section" aria-label="Shop categories" role="list">
+            <article class="box box1" role="listitem">
+                <div class="box-content">
+                    <h2>Health & Personal Care</h2>
+                    <img src="images/back1.png.jpg" alt="Health and personal care products" class="box-img">
+                    <p class="price">From <strong>₹499</strong></p>
+                    <p class="desc">Essential vitamins, personal care and wellness products.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+
+            <article class="box box2" role="listitem">
+                <div class="box-content">
+                    <h2>Clothes</h2>
+                    <img src="images/back2.png.jpg" alt="Clothing and fashion" class="box-img">
+                    <p class="price">From <strong>₹299</strong></p>
+                    <p class="desc">Latest fashion and everyday wear.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+
+            <article class="box box3" role="listitem">
+                <div class="box-content">
+                    <h2>Mobile</h2>
+                    <img src="images/back3.png.jpg" alt="Mobile phones and accessories" class="box-img">
+                    <p class="price">Starting at <strong>₹6,999</strong></p>
+                    <p class="desc">Smartphones, accessories and more.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+
+            <article class="box box4" role="listitem">
+                <div class="box-content">
+                    <h2>Sports</h2>
+                    <img src="images/back4.png.jpg" alt="Sports equipment and apparel" class="box-img">
+                    <p class="price">From <strong>₹199</strong></p>
+                    <p class="desc">Equipment and apparel for all sports.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+
+            <article class="box box5" role="listitem">
+                <div class="box-content">
+                    <h2>Sweets & Mithai</h2>
+                    <img src="images/back5.png.jpg" alt="Traditional sweets and festive mithai boxes" class="box-img">
+                    <p class="price">From <strong>₹99</strong></p>
+                    <p class="desc">Traditional sweets and festive mithai boxes.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+
+            <article class="box box6" role="listitem">
+                <div class="box-content">
+                    <h2>Dry fruit & Nuts</h2>
+                    <img src="images/back6.png.jpg" alt="Premium nuts and healthy snacks" class="box-img">
+                    <p class="price">From <strong>₹149</strong></p>
+                    <p class="desc">Premium nuts and healthy snacks.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+
+            <article class="box box7" role="listitem">
+                <div class="box-content">
+                    <h2>Electronics</h2>
+                    <img src="images/back7.png.jpg" alt="Home electronics, TVs, and gadgets" class="box-img">
+                    <p class="price">From <strong>₹999</strong></p>
+                    <p class="desc">Home electronics, TVs, and gadgets.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+
+            <article class="box box8" role="listitem">
+                <div class="box-content">
+                    <h2>Headphones & Buds</h2>
+                    <img src="images/back8.png.jpg" alt="Wireless headphones and true wireless buds" class="box-img">
+                    <p class="price">From <strong>₹699</strong></p>
+                    <p class="desc">Wireless headphones and true wireless buds.</p>
+                    <p><a href="#">See more</a></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-nav">
+            <div class="footer-top">
+                <a href="#" class="footer-back-to-top">
+                    Back to top
+                </a>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Get to Know Us</h3>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About Amazon</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Amazon Devices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Make Money with Us</h3>
+                    <ul>
+                        <li><a href="#">Sell products on Amazon</a></li>
+                        <li><a href="#">Sell on Amazon Business</a></li>
+                        <li><a href="#">Sell apps on Amazon</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Amazon Payment Products</h3>
+                    <ul>
+                        <li><a href="#">Amazon Business Card</a></li>
+                        <li><a href="#">Shop with Points</a></li>
+                        <li><a href="#">Reload Your Balance</a></li>
+                        <li><a href="#">Amazon Currency Converter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Let Us Help You</h3>
+                    <ul>
+                        <!-- <li><a href="#">Amazon and COVID-19</a></li> -->
+                        <!-- <li><a href="#">Your Account</a></li> -->
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Shipping Rates & Policies</a></li>
+                        <li><a href="#">Returns & Replacements</a></li>
+                        <li><a href="#">Manage Your Content and Devices</a></li>
+                        <!-- <li><a href="#">Amazon Assistant</a></li> -->
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="images/amazon_logo.png.jpg" alt="Amazon" class="footer-logo-img">
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-copyright-text">&copy; 2023, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
